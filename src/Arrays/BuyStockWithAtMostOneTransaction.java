@@ -22,6 +22,7 @@ package Arrays;
  * maxProfit = max(maxProfit, A[i] - minPrice)
  * return maxProfit
  * }
+ *
  */
 
 public class BuyStockWithAtMostOneTransaction {
