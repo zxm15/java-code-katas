@@ -42,8 +42,9 @@ package Strings;
  *          isCode = true;
  *          newStart = false;
  *
- *
+ *above pesudo code is not the optimal code, but it leads my optimal code below
  * Complexity O(N) time and O(N) space
+ * This is not a hard problem, but combine logic to form final clean code is a good trainning.
  */
 public class RemoveComment {
 
@@ -64,7 +65,7 @@ public class RemoveComment {
                     continue;
                 }
                 sb.append(curr);
-                if (i == source.length() - 1) sb.append(next);
+                if (i == source.length() - 1) sb.append(next); //take care of the last character
             } else {
                 String pair = curr + "" + next;
                 if (pair.equals("/n") && searchNewLine || pair.equals("*/") && !searchNewLine) {
