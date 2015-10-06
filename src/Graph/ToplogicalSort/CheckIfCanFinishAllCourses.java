@@ -36,14 +36,7 @@ import java.util.Map;
  * because tree has more restrications than having a cycle.
  * see review for more details about the difference between tree and graph
  */
-class GraphNode {
-    int label;
-    List<GraphNode> neighbors;
-    public GraphNode(int label) {
-        this.label = label;
-        neighbors = new ArrayList<>();
-    }
-}
+
 
 public class CheckIfCanFinishAllCourses {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
