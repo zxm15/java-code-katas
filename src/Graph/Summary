@@ -1,0 +1,29 @@
+a. What types of problems?
+1. bfs and dfs
+nature is to traverse the graph
+many variations : matrix explore, maze, color fill, number of islading, networks
+2. toplogical sort
+nature is to determine a "sorted" order in graph
+examples: course selection, character order in leetcode
+3. union-find
+nature is to find if two graph node is in the same graph or connected component.
+examples: find connected component for undirected and directed graph, detected circle.
+4. difference between tree, forest, graph
+nature is to understand the difference between tree and graph.
+
+tree
+has one and only one root;
+each tree node has one and only one parent except for root;
+each tree node could have 0 to multiple children;
+no loop
+
+graph
+does not have clear root, espeically for undirected graph
+each graph node could have 0 to multiple parents;
+each graph node could have 0 to multiple children;
+could have loop
+
+examples: valid tree from leetcode
+
+
+
