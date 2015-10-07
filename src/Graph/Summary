@@ -26,4 +26,14 @@ could have loop
 examples: valid tree from leetcode
 
 
+difference between the 3 representations of the graph
+1. object and pointers (list of vetices and list of edges)
+2. adjacency matrix
+3. adjacency list
+
+       access edge    traversal      add vertex, remove vertex, add edge, remove edge    space
+object  e               ve              1           e             1             1         v+e
+matrix  1               v*v             v*v         v*v           1             1         v*v
+list    e               v+e             1           v+e           1             e         v+e
+
 
