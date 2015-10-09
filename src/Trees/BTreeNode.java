@@ -8,10 +8,10 @@ import java.util.Queue;
  */
 public class BTreeNode {
 
-    int val;
-    BTreeNode left;
-    BTreeNode right;
-    BTreeNode parent;
+    public int val;
+    public BTreeNode left;
+    public BTreeNode right;
+    public BTreeNode parent;
 
     public BTreeNode(int value) {
         val = value;
