@@ -22,6 +22,9 @@ public class PrintBinaryTreeVertically {
     public List<List<Integer>> generateVerticalList(BTreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         int leftMostLevel = findLeftMostLevel(root);
+        for (int i = 0; i < leftMostLevel; i++) {
+            res.add(new ArrayList<>());
+        }
         generateVerticalListHelper(root, leftMostLevel, res);
 
         return res;
@@ -39,9 +42,10 @@ public class PrintBinaryTreeVertically {
 
     private void generateVerticalListHelper(BTreeNode node, int index, List<List<Integer>> res) {
         if (node == null) return;
+        if (index == res.size()) res.add(new ArrayList<>());
         res.get(index).add(node.val);
-        generateVerticalListHelper(node.left, index + 1, res);
-        generateVerticalListHelper(node.right, index - 1, res);
+        generateVerticalListHelper(node.left, index - 1, res);
+        generateVerticalListHelper(node.right, index + 1, res);
     }
 }
 /**
