@@ -27,7 +27,7 @@ import java.util.Random;
 class Pair {
     int value;
     int weight;
-    public int (int v, int f) {
+    public Pair (int v, int f) {
         value = v;
         weight = f;
     }
