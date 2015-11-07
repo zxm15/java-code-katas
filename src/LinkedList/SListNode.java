@@ -8,7 +8,6 @@ public class SListNode {
     SListNode next;
     public SListNode(int val) {
         this.val = val;
-        next = null;
     }
     public int size() {
         int count = 0;
@@ -19,5 +18,12 @@ public class SListNode {
         }
         return count;
     }
-
+    public void print() {
+        SListNode node = this;
+        while (node != null) {
+            System.out.print(node.val);
+            node = node.next;
+        }
+        System.out.println();
+    }
 }
