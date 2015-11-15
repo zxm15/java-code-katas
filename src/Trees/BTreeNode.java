@@ -12,6 +12,7 @@ public class BTreeNode {
     public BTreeNode left;
     public BTreeNode right;
     public BTreeNode parent;
+    public int leftSubtreeSize;
 
     public BTreeNode(int value) {
         val = value;
