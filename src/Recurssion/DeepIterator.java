@@ -64,11 +64,9 @@ public class DeepIterator implements Iterator {
         DeepIterator solution = new DeepIterator(list);
         List<Integer> res = new LinkedList<>();
         while(solution.hasNext()) {
-            Integer i = solution.next();
-            System.out.println(i);
-            res.add(i);
+            res.add(solution.next());
         }
-        System.out.println(res.toString());
+        System.out.println(res);
 
     }
 }
