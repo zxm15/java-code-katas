@@ -8,7 +8,6 @@ public class SListNode {
     public SListNode next;
     public SListNode(int val) {
         this.val = val;
-        next = null;
     }
 
     public SListNode create(int[] arr) {
@@ -31,6 +30,16 @@ public class SListNode {
         return count;
     }
 
+    public void print() {
+        SListNode node = this;
+        while (node != null) {
+            System.out.print(node.val);
+            node = node.next;
+        }
+        System.out.println();
+    }
+
+
     public int getVal() {
         return val;
     }
@@ -46,4 +55,5 @@ public class SListNode {
     public void setVal(int val) {
         this.val = val;
     }
+
 }
